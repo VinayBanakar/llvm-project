@@ -1,0 +1,362 @@
+dump
+Recorded MIBs (incl. live on exit):
+Memory allocation stack id = 1
+	alloc_count 1, size (ave/min/max) 304.00 / 304 / 304
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 3504.00 / 3504 / 3504
+	num migrated: 1, num lifetime overlaps: 0, num same alloc cpu: 0, num same dealloc_cpu: 0
+Memory allocation stack id = 5
+	alloc_count 1, size (ave/min/max) 73728.00 / 73728 / 73728
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 3504.00 / 3504 / 3504
+	num migrated: 1, num lifetime overlaps: 0, num same alloc cpu: 0, num same dealloc_cpu: 0
+Memory allocation stack id = 6
+	alloc_count 1, size (ave/min/max) 10.00 / 10 / 10
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 3000.00 / 3000 / 3000
+	num migrated: 1, num lifetime overlaps: 0, num same alloc cpu: 0, num same dealloc_cpu: 0
+Memory allocation stack id = 7
+	alloc_count 1, size (ave/min/max) 1024.00 / 1024 / 1024
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 3001.00 / 3001 / 3001
+	num migrated: 1, num lifetime overlaps: 0, num same alloc cpu: 0, num same dealloc_cpu: 0
+Stack for id 1:
+    #0 0x55aaa165edd7  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8edd7) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f2408b43f02  (/lib64/ld-linux-x86-64.so.2+0x10f02) (BuildId: accffc5784c4a469d09348e3f7ec53a74096fbd3)
+
+Stack for id 2:
+    #0 0x55aaa165bcb1  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8bcb1) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f2408b37e59  (/lib64/ld-linux-x86-64.so.2+0x4e59) (BuildId: accffc5784c4a469d09348e3f7ec53a74096fbd3)
+
+Stack for id 6:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x55aaa168e512  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0xbe512) (BuildId: 2bbb49c5b404f20b)
+    #2 0x7f24085666c9  (/lib/x86_64-linux-gnu/libc.so.6+0x276c9) (BuildId: 2ac5fa07c22f99cfd5dc47c70cd5f0e78b974269)
+
+Stack for id 7:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f24085b241b  (/lib/x86_64-linux-gnu/libc.so.6+0x7341b) (BuildId: 2ac5fa07c22f99cfd5dc47c70cd5f0e78b974269)
+
+Stack for id 4:
+    #0 0x55aaa165edd7  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8edd7) (BuildId: 2bbb49c5b404f20b)
+
+Stack for id 3:
+    #0 0x55aaa165d6b0  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8d6b0) (BuildId: 2bbb49c5b404f20b)
+
+Stack for id 5:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f24088ac8dd  (/lib/x86_64-linux-gnu/libstdc++.so.6+0xac8dd) (BuildId: 5ee505b0fcd19442c7c50f54b8271a6670ea8274)
+
+dump
+Recorded MIBs (incl. live on exit):
+Memory allocation stack id = 1
+	alloc_count 2, size (ave/min/max) 304.00 / 304 / 304
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 5003.50 / 3504 / 6503
+	num migrated: 1, num lifetime overlaps: 1, num same alloc cpu: 1, num same dealloc_cpu: 1
+Memory allocation stack id = 5
+	alloc_count 2, size (ave/min/max) 73728.00 / 73728 / 73728
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 5003.50 / 3504 / 6503
+	num migrated: 1, num lifetime overlaps: 1, num same alloc cpu: 1, num same dealloc_cpu: 1
+Memory allocation stack id = 6
+	alloc_count 2, size (ave/min/max) 10.00 / 10 / 10
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 4500.00 / 3000 / 6000
+	num migrated: 1, num lifetime overlaps: 1, num same alloc cpu: 1, num same dealloc_cpu: 1
+Memory allocation stack id = 7
+	alloc_count 2, size (ave/min/max) 1024.00 / 1024 / 1024
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 4500.50 / 3001 / 6000
+	num migrated: 1, num lifetime overlaps: 1, num same alloc cpu: 1, num same dealloc_cpu: 1
+Stack for id 1:
+    #0 0x55aaa165edd7  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8edd7) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f2408b43f02  (/lib64/ld-linux-x86-64.so.2+0x10f02) (BuildId: accffc5784c4a469d09348e3f7ec53a74096fbd3)
+
+Stack for id 2:
+    #0 0x55aaa165bcb1  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8bcb1) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f2408b37e59  (/lib64/ld-linux-x86-64.so.2+0x4e59) (BuildId: accffc5784c4a469d09348e3f7ec53a74096fbd3)
+
+Stack for id 6:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x55aaa168e512  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0xbe512) (BuildId: 2bbb49c5b404f20b)
+    #2 0x7f24085666c9  (/lib/x86_64-linux-gnu/libc.so.6+0x276c9) (BuildId: 2ac5fa07c22f99cfd5dc47c70cd5f0e78b974269)
+
+Stack for id 7:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f24085b241b  (/lib/x86_64-linux-gnu/libc.so.6+0x7341b) (BuildId: 2ac5fa07c22f99cfd5dc47c70cd5f0e78b974269)
+
+Stack for id 4:
+    #0 0x55aaa165edd7  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8edd7) (BuildId: 2bbb49c5b404f20b)
+
+Stack for id 3:
+    #0 0x55aaa165d6b0  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8d6b0) (BuildId: 2bbb49c5b404f20b)
+
+Stack for id 5:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f24088ac8dd  (/lib/x86_64-linux-gnu/libstdc++.so.6+0xac8dd) (BuildId: 5ee505b0fcd19442c7c50f54b8271a6670ea8274)
+
+dump
+Recorded MIBs (incl. live on exit):
+Memory allocation stack id = 1
+	alloc_count 3, size (ave/min/max) 304.00 / 304 / 304
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 6503.33 / 3504 / 9503
+	num migrated: 1, num lifetime overlaps: 2, num same alloc cpu: 2, num same dealloc_cpu: 2
+Memory allocation stack id = 5
+	alloc_count 3, size (ave/min/max) 73728.00 / 73728 / 73728
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 6503.33 / 3504 / 9503
+	num migrated: 1, num lifetime overlaps: 2, num same alloc cpu: 2, num same dealloc_cpu: 2
+Memory allocation stack id = 6
+	alloc_count 3, size (ave/min/max) 10.00 / 10 / 10
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 6000.00 / 3000 / 9000
+	num migrated: 1, num lifetime overlaps: 2, num same alloc cpu: 2, num same dealloc_cpu: 2
+Memory allocation stack id = 7
+	alloc_count 3, size (ave/min/max) 1024.00 / 1024 / 1024
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 6000.33 / 3001 / 9000
+	num migrated: 1, num lifetime overlaps: 2, num same alloc cpu: 2, num same dealloc_cpu: 2
+Stack for id 1:
+    #0 0x55aaa165edd7  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8edd7) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f2408b43f02  (/lib64/ld-linux-x86-64.so.2+0x10f02) (BuildId: accffc5784c4a469d09348e3f7ec53a74096fbd3)
+
+Stack for id 2:
+    #0 0x55aaa165bcb1  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8bcb1) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f2408b37e59  (/lib64/ld-linux-x86-64.so.2+0x4e59) (BuildId: accffc5784c4a469d09348e3f7ec53a74096fbd3)
+
+Stack for id 6:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x55aaa168e512  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0xbe512) (BuildId: 2bbb49c5b404f20b)
+    #2 0x7f24085666c9  (/lib/x86_64-linux-gnu/libc.so.6+0x276c9) (BuildId: 2ac5fa07c22f99cfd5dc47c70cd5f0e78b974269)
+
+Stack for id 7:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f24085b241b  (/lib/x86_64-linux-gnu/libc.so.6+0x7341b) (BuildId: 2ac5fa07c22f99cfd5dc47c70cd5f0e78b974269)
+
+Stack for id 4:
+    #0 0x55aaa165edd7  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8edd7) (BuildId: 2bbb49c5b404f20b)
+
+Stack for id 3:
+    #0 0x55aaa165d6b0  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8d6b0) (BuildId: 2bbb49c5b404f20b)
+
+Stack for id 5:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f24088ac8dd  (/lib/x86_64-linux-gnu/libstdc++.so.6+0xac8dd) (BuildId: 5ee505b0fcd19442c7c50f54b8271a6670ea8274)
+
+dump
+Recorded MIBs (incl. live on exit):
+Memory allocation stack id = 1
+	alloc_count 4, size (ave/min/max) 304.00 / 304 / 304
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 8003.50 / 3504 / 12504
+	num migrated: 1, num lifetime overlaps: 3, num same alloc cpu: 3, num same dealloc_cpu: 3
+Memory allocation stack id = 5
+	alloc_count 4, size (ave/min/max) 73728.00 / 73728 / 73728
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 8003.50 / 3504 / 12504
+	num migrated: 1, num lifetime overlaps: 3, num same alloc cpu: 3, num same dealloc_cpu: 3
+Memory allocation stack id = 6
+	alloc_count 4, size (ave/min/max) 10.00 / 10 / 10
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 7500.00 / 3000 / 12000
+	num migrated: 1, num lifetime overlaps: 3, num same alloc cpu: 3, num same dealloc_cpu: 3
+Memory allocation stack id = 7
+	alloc_count 4, size (ave/min/max) 1024.00 / 1024 / 1024
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 7500.50 / 3001 / 12001
+	num migrated: 1, num lifetime overlaps: 3, num same alloc cpu: 3, num same dealloc_cpu: 3
+Stack for id 1:
+    #0 0x55aaa165edd7  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8edd7) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f2408b43f02  (/lib64/ld-linux-x86-64.so.2+0x10f02) (BuildId: accffc5784c4a469d09348e3f7ec53a74096fbd3)
+
+Stack for id 2:
+    #0 0x55aaa165bcb1  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8bcb1) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f2408b37e59  (/lib64/ld-linux-x86-64.so.2+0x4e59) (BuildId: accffc5784c4a469d09348e3f7ec53a74096fbd3)
+
+Stack for id 6:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x55aaa168e512  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0xbe512) (BuildId: 2bbb49c5b404f20b)
+    #2 0x7f24085666c9  (/lib/x86_64-linux-gnu/libc.so.6+0x276c9) (BuildId: 2ac5fa07c22f99cfd5dc47c70cd5f0e78b974269)
+
+Stack for id 7:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f24085b241b  (/lib/x86_64-linux-gnu/libc.so.6+0x7341b) (BuildId: 2ac5fa07c22f99cfd5dc47c70cd5f0e78b974269)
+
+Stack for id 4:
+    #0 0x55aaa165edd7  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8edd7) (BuildId: 2bbb49c5b404f20b)
+
+Stack for id 3:
+    #0 0x55aaa165d6b0  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8d6b0) (BuildId: 2bbb49c5b404f20b)
+
+Stack for id 5:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f24088ac8dd  (/lib/x86_64-linux-gnu/libstdc++.so.6+0xac8dd) (BuildId: 5ee505b0fcd19442c7c50f54b8271a6670ea8274)
+
+dump
+Recorded MIBs (incl. live on exit):
+Memory allocation stack id = 1
+	alloc_count 5, size (ave/min/max) 304.00 / 304 / 304
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 9503.40 / 3504 / 15503
+	num migrated: 1, num lifetime overlaps: 4, num same alloc cpu: 4, num same dealloc_cpu: 4
+Memory allocation stack id = 5
+	alloc_count 5, size (ave/min/max) 73728.00 / 73728 / 73728
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 9503.40 / 3504 / 15503
+	num migrated: 1, num lifetime overlaps: 4, num same alloc cpu: 4, num same dealloc_cpu: 4
+Memory allocation stack id = 6
+	alloc_count 5, size (ave/min/max) 10.00 / 10 / 10
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 9000.00 / 3000 / 15000
+	num migrated: 1, num lifetime overlaps: 4, num same alloc cpu: 4, num same dealloc_cpu: 4
+Memory allocation stack id = 7
+	alloc_count 5, size (ave/min/max) 1024.00 / 1024 / 1024
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 9000.40 / 3001 / 15000
+	num migrated: 1, num lifetime overlaps: 4, num same alloc cpu: 4, num same dealloc_cpu: 4
+Stack for id 1:
+    #0 0x55aaa165edd7  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8edd7) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f2408b43f02  (/lib64/ld-linux-x86-64.so.2+0x10f02) (BuildId: accffc5784c4a469d09348e3f7ec53a74096fbd3)
+
+Stack for id 2:
+    #0 0x55aaa165bcb1  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8bcb1) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f2408b37e59  (/lib64/ld-linux-x86-64.so.2+0x4e59) (BuildId: accffc5784c4a469d09348e3f7ec53a74096fbd3)
+
+Stack for id 6:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x55aaa168e512  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0xbe512) (BuildId: 2bbb49c5b404f20b)
+    #2 0x7f24085666c9  (/lib/x86_64-linux-gnu/libc.so.6+0x276c9) (BuildId: 2ac5fa07c22f99cfd5dc47c70cd5f0e78b974269)
+
+Stack for id 7:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f24085b241b  (/lib/x86_64-linux-gnu/libc.so.6+0x7341b) (BuildId: 2ac5fa07c22f99cfd5dc47c70cd5f0e78b974269)
+
+Stack for id 4:
+    #0 0x55aaa165edd7  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8edd7) (BuildId: 2bbb49c5b404f20b)
+
+Stack for id 3:
+    #0 0x55aaa165d6b0  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8d6b0) (BuildId: 2bbb49c5b404f20b)
+
+Stack for id 5:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f24088ac8dd  (/lib/x86_64-linux-gnu/libstdc++.so.6+0xac8dd) (BuildId: 5ee505b0fcd19442c7c50f54b8271a6670ea8274)
+
+dump
+Recorded MIBs (incl. live on exit):
+Memory allocation stack id = 1
+	alloc_count 6, size (ave/min/max) 304.00 / 304 / 304
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 11003.33 / 3504 / 18503
+	num migrated: 1, num lifetime overlaps: 5, num same alloc cpu: 5, num same dealloc_cpu: 5
+Memory allocation stack id = 5
+	alloc_count 6, size (ave/min/max) 73728.00 / 73728 / 73728
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 11003.33 / 3504 / 18503
+	num migrated: 1, num lifetime overlaps: 5, num same alloc cpu: 5, num same dealloc_cpu: 5
+Memory allocation stack id = 6
+	alloc_count 7, size (ave/min/max) 10.00 / 10 / 10
+	access_count (ave/min/max): 0.28 / 0 / 2
+	lifetime (ave/min/max): 11571.57 / 3000 / 18001
+	num migrated: 1, num lifetime overlaps: 6, num same alloc cpu: 6, num same dealloc_cpu: 5
+Memory allocation stack id = 7
+	alloc_count 6, size (ave/min/max) 1024.00 / 1024 / 1024
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 10500.33 / 3001 / 18000
+	num migrated: 1, num lifetime overlaps: 5, num same alloc cpu: 5, num same dealloc_cpu: 5
+Memory allocation stack id = 8
+	alloc_count 1, size (ave/min/max) 10.00 / 10 / 10
+	access_count (ave/min/max): 2.00 / 2 / 2
+	lifetime (ave/min/max): 0.00 / 0 / 0
+	num migrated: 0, num lifetime overlaps: 0, num same alloc cpu: 0, num same dealloc_cpu: 0
+Stack for id 1:
+    #0 0x55aaa165edd7  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8edd7) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f2408b43f02  (/lib64/ld-linux-x86-64.so.2+0x10f02) (BuildId: accffc5784c4a469d09348e3f7ec53a74096fbd3)
+
+Stack for id 2:
+    #0 0x55aaa165bcb1  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8bcb1) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f2408b37e59  (/lib64/ld-linux-x86-64.so.2+0x4e59) (BuildId: accffc5784c4a469d09348e3f7ec53a74096fbd3)
+
+Stack for id 6:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x55aaa168e512  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0xbe512) (BuildId: 2bbb49c5b404f20b)
+    #2 0x7f24085666c9  (/lib/x86_64-linux-gnu/libc.so.6+0x276c9) (BuildId: 2ac5fa07c22f99cfd5dc47c70cd5f0e78b974269)
+
+Stack for id 7:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f24085b241b  (/lib/x86_64-linux-gnu/libc.so.6+0x7341b) (BuildId: 2ac5fa07c22f99cfd5dc47c70cd5f0e78b974269)
+
+Stack for id 4:
+    #0 0x55aaa165edd7  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8edd7) (BuildId: 2bbb49c5b404f20b)
+
+Stack for id 3:
+    #0 0x55aaa165d6b0  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8d6b0) (BuildId: 2bbb49c5b404f20b)
+
+Stack for id 8:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x55aaa168e5b7  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0xbe5b7) (BuildId: 2bbb49c5b404f20b)
+    #2 0x7f24085666c9  (/lib/x86_64-linux-gnu/libc.so.6+0x276c9) (BuildId: 2ac5fa07c22f99cfd5dc47c70cd5f0e78b974269)
+
+Stack for id 5:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f24088ac8dd  (/lib/x86_64-linux-gnu/libstdc++.so.6+0xac8dd) (BuildId: 5ee505b0fcd19442c7c50f54b8271a6670ea8274)
+
+Recorded MIBs (incl. live on exit):
+Memory allocation stack id = 1
+	alloc_count 7, size (ave/min/max) 304.00 / 304 / 304
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 12075.57 / 3504 / 18509
+	num migrated: 1, num lifetime overlaps: 6, num same alloc cpu: 6, num same dealloc_cpu: 5
+Memory allocation stack id = 5
+	alloc_count 7, size (ave/min/max) 73728.00 / 73728 / 73728
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 12075.57 / 3504 / 18509
+	num migrated: 1, num lifetime overlaps: 6, num same alloc cpu: 6, num same dealloc_cpu: 5
+Memory allocation stack id = 6
+	alloc_count 7, size (ave/min/max) 10.00 / 10 / 10
+	access_count (ave/min/max): 0.28 / 0 / 2
+	lifetime (ave/min/max): 11571.57 / 3000 / 18001
+	num migrated: 1, num lifetime overlaps: 6, num same alloc cpu: 6, num same dealloc_cpu: 5
+Memory allocation stack id = 7
+	alloc_count 7, size (ave/min/max) 1024.00 / 1024 / 1024
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 11572.57 / 3001 / 18006
+	num migrated: 1, num lifetime overlaps: 6, num same alloc cpu: 6, num same dealloc_cpu: 5
+Memory allocation stack id = 8
+	alloc_count 1, size (ave/min/max) 10.00 / 10 / 10
+	access_count (ave/min/max): 2.00 / 2 / 2
+	lifetime (ave/min/max): 0.00 / 0 / 0
+	num migrated: 0, num lifetime overlaps: 0, num same alloc cpu: 0, num same dealloc_cpu: 0
+Stack for id 1:
+    #0 0x55aaa165edd7  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8edd7) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f2408b43f02  (/lib64/ld-linux-x86-64.so.2+0x10f02) (BuildId: accffc5784c4a469d09348e3f7ec53a74096fbd3)
+
+Stack for id 2:
+    #0 0x55aaa165bcb1  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8bcb1) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f2408b37e59  (/lib64/ld-linux-x86-64.so.2+0x4e59) (BuildId: accffc5784c4a469d09348e3f7ec53a74096fbd3)
+
+Stack for id 6:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x55aaa168e512  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0xbe512) (BuildId: 2bbb49c5b404f20b)
+    #2 0x7f24085666c9  (/lib/x86_64-linux-gnu/libc.so.6+0x276c9) (BuildId: 2ac5fa07c22f99cfd5dc47c70cd5f0e78b974269)
+
+Stack for id 7:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f24085b241b  (/lib/x86_64-linux-gnu/libc.so.6+0x7341b) (BuildId: 2ac5fa07c22f99cfd5dc47c70cd5f0e78b974269)
+
+Stack for id 4:
+    #0 0x55aaa165edd7  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8edd7) (BuildId: 2bbb49c5b404f20b)
+
+Stack for id 3:
+    #0 0x55aaa165d6b0  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8d6b0) (BuildId: 2bbb49c5b404f20b)
+
+Stack for id 8:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x55aaa168e5b7  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0xbe5b7) (BuildId: 2bbb49c5b404f20b)
+    #2 0x7f24085666c9  (/lib/x86_64-linux-gnu/libc.so.6+0x276c9) (BuildId: 2ac5fa07c22f99cfd5dc47c70cd5f0e78b974269)
+
+Stack for id 5:
+    #0 0x55aaa165eaef  (/usr/local/google/home/vny/Documents/llvm-project/build/hello+0x8eaef) (BuildId: 2bbb49c5b404f20b)
+    #1 0x7f24088ac8dd  (/lib/x86_64-linux-gnu/libstdc++.so.6+0xac8dd) (BuildId: 5ee505b0fcd19442c7c50f54b8271a6670ea8274)
+

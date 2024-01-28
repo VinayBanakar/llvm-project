@@ -25,6 +25,9 @@
 #include "sanitizer_common/sanitizer_libc.h"
 #include "sanitizer_common/sanitizer_symbolizer.h"
 
+#include <pthread.h>
+#include <signal.h>
+#include <sys/time.h>
 #include <time.h>
 
 uptr __memprof_shadow_memory_dynamic_address; // Global interface symbol.
@@ -142,6 +145,45 @@ void PrintAddressSpaceLayout() {
   CHECK(SHADOW_SCALE >= 3 && SHADOW_SCALE <= 7);
 }
 
+// Signal handler function
+void ProfilingSignalHandler(int signo) {
+  if (signo == SIGPROF) {
+    __memprof_profile_dump();
+  }
+}
+
+// Profiling thread function
+void *ProfilingThreadFunc(void *arg) {
+  // Block all signals except SIGPROF
+  sigset_t set;
+  sigfillset(&set);
+  sigdelset(&set, SIGPROF);
+  pthread_sigmask(SIG_BLOCK, &set, NULL);
+
+  // Set up signal handler for SIGPROF
+  struct sigaction sa;
+  sa.sa_handler = ProfilingSignalHandler; // Define this handler
+  sigemptyset(&sa.sa_mask);
+  sa.sa_flags = 0;
+  sigaction(SIGPROF, &sa, NULL);
+
+  // Configure setitimer to send SIGPROF to this thread
+  struct itimerval it_val;
+  it_val.it_value.tv_sec = 3; // Start after 3 seconds
+  it_val.it_value.tv_usec = 0;
+  it_val.it_interval = it_val.it_value; // Repeat every 3 seconds
+  setitimer(ITIMER_PROF, &it_val, NULL);
+
+  // Profiling thread's main loop
+  while (true) {
+    // Wait for signals, perform periodic tasks if needed
+    // pause();
+    continue;
+  }
+
+  return NULL;
+}
+
 static void MemprofInitInternal() {
   if (LIKELY(memprof_inited))
     return;
@@ -214,6 +256,9 @@ static void MemprofInitInternal() {
 
   memprof_init_is_running = false;
   memprof_inited = 1;
+
+  pthread_t profiling_thread;
+  pthread_create(&profiling_thread, NULL, ProfilingThreadFunc, NULL);
 }
 
 void MemprofInitTime() {

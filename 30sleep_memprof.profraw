@@ -1,0 +1,500 @@
+Recorded MIBs (incl. live on exit):
+Memory allocation stack id = 1
+	alloc_count 1, size (ave/min/max) 304.00 / 304 / 304
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 3115.00 / 3115 / 3115
+	num migrated: 1, num lifetime overlaps: 0, num same alloc cpu: 0, num same dealloc_cpu: 0
+Memory allocation stack id = 5
+	alloc_count 1, size (ave/min/max) 73728.00 / 73728 / 73728
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 3115.00 / 3115 / 3115
+	num migrated: 1, num lifetime overlaps: 0, num same alloc cpu: 0, num same dealloc_cpu: 0
+Memory allocation stack id = 6
+	alloc_count 1, size (ave/min/max) 66.00 / 66 / 66
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 3004.00 / 3004 / 3004
+	num migrated: 1, num lifetime overlaps: 0, num same alloc cpu: 0, num same dealloc_cpu: 0
+Memory allocation stack id = 7
+	alloc_count 1, size (ave/min/max) 1024.00 / 1024 / 1024
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 3004.00 / 3004 / 3004
+	num migrated: 1, num lifetime overlaps: 0, num same alloc cpu: 0, num same dealloc_cpu: 0
+Stack for id 5:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x7fbc208ac8dd  (/lib/x86_64-linux-gnu/libstdc++.so.6+0xac8dd) (BuildId: 5ee505b0fcd19442c7c50f54b8271a6670ea8274)
+
+Stack for id 2:
+    #0 0x56145c5e5c61 in pthread_create /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_interceptors.cpp:137:3
+    #1 0x56145c5eb397 in __memprof::MemprofInitInternal() (.part.0) /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_rtl.cpp:261:17
+
+Stack for id 4:
+    #0 0x56145c5e8d87 in calloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:65:3
+
+Stack for id 6:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x56145c6184bd in main /usr/local/google/home/vny/Documents/llvm-project/hello.cc:19:21
+    #2 0x7fbc206456c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+
+Stack for id 1:
+    #0 0x56145c5e8d87 in calloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:65:3
+    #1 0x7fbc20c07f02 in calloc elf/../include/rtld-malloc.h:44:10
+    #2 0x7fbc20c07f02 in allocate_dtv elf/../elf/dl-tls.c:375:9
+
+Stack for id 3:
+    #0 0x56145c5e7660 in realloc.part.0 /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:73:3
+
+Stack for id 7:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x7fbc2069141b in _IO_file_doallocate libio/filedoalloc.c:101:7
+
+Recorded MIBs (incl. live on exit):
+Memory allocation stack id = 1
+	alloc_count 2, size (ave/min/max) 304.00 / 304 / 304
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 4691.00 / 3115 / 6267
+	num migrated: 1, num lifetime overlaps: 1, num same alloc cpu: 1, num same dealloc_cpu: 0
+Memory allocation stack id = 5
+	alloc_count 2, size (ave/min/max) 73728.00 / 73728 / 73728
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 4691.00 / 3115 / 6267
+	num migrated: 1, num lifetime overlaps: 1, num same alloc cpu: 1, num same dealloc_cpu: 0
+Memory allocation stack id = 6
+	alloc_count 2, size (ave/min/max) 66.00 / 66 / 66
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 4580.00 / 3004 / 6156
+	num migrated: 1, num lifetime overlaps: 1, num same alloc cpu: 1, num same dealloc_cpu: 0
+Memory allocation stack id = 7
+	alloc_count 2, size (ave/min/max) 1024.00 / 1024 / 1024
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 4580.00 / 3004 / 6156
+	num migrated: 1, num lifetime overlaps: 1, num same alloc cpu: 1, num same dealloc_cpu: 0
+Stack for id 5:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x7fbc208ac8dd  (/lib/x86_64-linux-gnu/libstdc++.so.6+0xac8dd) (BuildId: 5ee505b0fcd19442c7c50f54b8271a6670ea8274)
+
+Stack for id 2:
+    #0 0x56145c5e5c61 in pthread_create /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_interceptors.cpp:137:3
+    #1 0x56145c5eb397 in __memprof::MemprofInitInternal() (.part.0) /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_rtl.cpp:261:17
+
+Stack for id 4:
+    #0 0x56145c5e8d87 in calloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:65:3
+
+Stack for id 6:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x56145c6184bd in main /usr/local/google/home/vny/Documents/llvm-project/hello.cc:19:21
+    #2 0x7fbc206456c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+
+Stack for id 1:
+    #0 0x56145c5e8d87 in calloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:65:3
+    #1 0x7fbc20c07f02 in calloc elf/../include/rtld-malloc.h:44:10
+    #2 0x7fbc20c07f02 in allocate_dtv elf/../elf/dl-tls.c:375:9
+
+Stack for id 3:
+    #0 0x56145c5e7660 in realloc.part.0 /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:73:3
+
+Stack for id 7:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x7fbc2069141b in _IO_file_doallocate libio/filedoalloc.c:101:7
+
+Recorded MIBs (incl. live on exit):
+Memory allocation stack id = 1
+	alloc_count 3, size (ave/min/max) 304.00 / 304 / 304
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 6217.66 / 3115 / 9271
+	num migrated: 1, num lifetime overlaps: 2, num same alloc cpu: 2, num same dealloc_cpu: 1
+Memory allocation stack id = 5
+	alloc_count 3, size (ave/min/max) 73728.00 / 73728 / 73728
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 6217.66 / 3115 / 9271
+	num migrated: 1, num lifetime overlaps: 2, num same alloc cpu: 2, num same dealloc_cpu: 1
+Memory allocation stack id = 6
+	alloc_count 3, size (ave/min/max) 66.00 / 66 / 66
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 6106.66 / 3004 / 9160
+	num migrated: 1, num lifetime overlaps: 2, num same alloc cpu: 2, num same dealloc_cpu: 1
+Memory allocation stack id = 7
+	alloc_count 3, size (ave/min/max) 1024.00 / 1024 / 1024
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 6106.66 / 3004 / 9160
+	num migrated: 1, num lifetime overlaps: 2, num same alloc cpu: 2, num same dealloc_cpu: 1
+Stack for id 5:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x7fbc208ac8dd  (/lib/x86_64-linux-gnu/libstdc++.so.6+0xac8dd) (BuildId: 5ee505b0fcd19442c7c50f54b8271a6670ea8274)
+
+Stack for id 2:
+    #0 0x56145c5e5c61 in pthread_create /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_interceptors.cpp:137:3
+    #1 0x56145c5eb397 in __memprof::MemprofInitInternal() (.part.0) /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_rtl.cpp:261:17
+
+Stack for id 4:
+    #0 0x56145c5e8d87 in calloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:65:3
+
+Stack for id 6:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x56145c6184bd in main /usr/local/google/home/vny/Documents/llvm-project/hello.cc:19:21
+    #2 0x7fbc206456c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+
+Stack for id 1:
+    #0 0x56145c5e8d87 in calloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:65:3
+    #1 0x7fbc20c07f02 in calloc elf/../include/rtld-malloc.h:44:10
+    #2 0x7fbc20c07f02 in allocate_dtv elf/../elf/dl-tls.c:375:9
+
+Stack for id 3:
+    #0 0x56145c5e7660 in realloc.part.0 /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:73:3
+
+Stack for id 7:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x7fbc2069141b in _IO_file_doallocate libio/filedoalloc.c:101:7
+
+Recorded MIBs (incl. live on exit):
+Memory allocation stack id = 1
+	alloc_count 4, size (ave/min/max) 304.00 / 304 / 304
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 7731.00 / 3115 / 12271
+	num migrated: 1, num lifetime overlaps: 3, num same alloc cpu: 3, num same dealloc_cpu: 2
+Memory allocation stack id = 5
+	alloc_count 4, size (ave/min/max) 73728.00 / 73728 / 73728
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 7731.00 / 3115 / 12271
+	num migrated: 1, num lifetime overlaps: 3, num same alloc cpu: 3, num same dealloc_cpu: 2
+Memory allocation stack id = 6
+	alloc_count 4, size (ave/min/max) 66.00 / 66 / 66
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 7620.00 / 3004 / 12160
+	num migrated: 1, num lifetime overlaps: 3, num same alloc cpu: 3, num same dealloc_cpu: 2
+Memory allocation stack id = 7
+	alloc_count 4, size (ave/min/max) 1024.00 / 1024 / 1024
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 7620.00 / 3004 / 12160
+	num migrated: 1, num lifetime overlaps: 3, num same alloc cpu: 3, num same dealloc_cpu: 2
+Stack for id 5:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x7fbc208ac8dd  (/lib/x86_64-linux-gnu/libstdc++.so.6+0xac8dd) (BuildId: 5ee505b0fcd19442c7c50f54b8271a6670ea8274)
+
+Stack for id 2:
+    #0 0x56145c5e5c61 in pthread_create /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_interceptors.cpp:137:3
+    #1 0x56145c5eb397 in __memprof::MemprofInitInternal() (.part.0) /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_rtl.cpp:261:17
+
+Stack for id 4:
+    #0 0x56145c5e8d87 in calloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:65:3
+
+Stack for id 6:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x56145c6184bd in main /usr/local/google/home/vny/Documents/llvm-project/hello.cc:19:21
+    #2 0x7fbc206456c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+
+Stack for id 1:
+    #0 0x56145c5e8d87 in calloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:65:3
+    #1 0x7fbc20c07f02 in calloc elf/../include/rtld-malloc.h:44:10
+    #2 0x7fbc20c07f02 in allocate_dtv elf/../elf/dl-tls.c:375:9
+
+Stack for id 3:
+    #0 0x56145c5e7660 in realloc.part.0 /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:73:3
+
+Stack for id 7:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x7fbc2069141b in _IO_file_doallocate libio/filedoalloc.c:101:7
+
+Recorded MIBs (incl. live on exit):
+Memory allocation stack id = 1
+	alloc_count 5, size (ave/min/max) 304.00 / 304 / 304
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 9239.00 / 3115 / 15271
+	num migrated: 1, num lifetime overlaps: 4, num same alloc cpu: 4, num same dealloc_cpu: 2
+Memory allocation stack id = 5
+	alloc_count 5, size (ave/min/max) 73728.00 / 73728 / 73728
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 9239.00 / 3115 / 15271
+	num migrated: 1, num lifetime overlaps: 4, num same alloc cpu: 4, num same dealloc_cpu: 2
+Memory allocation stack id = 6
+	alloc_count 5, size (ave/min/max) 66.00 / 66 / 66
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 9128.00 / 3004 / 15160
+	num migrated: 1, num lifetime overlaps: 4, num same alloc cpu: 4, num same dealloc_cpu: 2
+Memory allocation stack id = 7
+	alloc_count 5, size (ave/min/max) 1024.00 / 1024 / 1024
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 9128.00 / 3004 / 15160
+	num migrated: 1, num lifetime overlaps: 4, num same alloc cpu: 4, num same dealloc_cpu: 2
+Stack for id 5:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x7fbc208ac8dd  (/lib/x86_64-linux-gnu/libstdc++.so.6+0xac8dd) (BuildId: 5ee505b0fcd19442c7c50f54b8271a6670ea8274)
+
+Stack for id 2:
+    #0 0x56145c5e5c61 in pthread_create /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_interceptors.cpp:137:3
+    #1 0x56145c5eb397 in __memprof::MemprofInitInternal() (.part.0) /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_rtl.cpp:261:17
+
+Stack for id 4:
+    #0 0x56145c5e8d87 in calloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:65:3
+
+Stack for id 6:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x56145c6184bd in main /usr/local/google/home/vny/Documents/llvm-project/hello.cc:19:21
+    #2 0x7fbc206456c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+
+Stack for id 1:
+    #0 0x56145c5e8d87 in calloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:65:3
+    #1 0x7fbc20c07f02 in calloc elf/../include/rtld-malloc.h:44:10
+    #2 0x7fbc20c07f02 in allocate_dtv elf/../elf/dl-tls.c:375:9
+
+Stack for id 3:
+    #0 0x56145c5e7660 in realloc.part.0 /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:73:3
+
+Stack for id 7:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x7fbc2069141b in _IO_file_doallocate libio/filedoalloc.c:101:7
+
+Recorded MIBs (incl. live on exit):
+Memory allocation stack id = 1
+	alloc_count 6, size (ave/min/max) 304.00 / 304 / 304
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 10745.66 / 3115 / 18279
+	num migrated: 1, num lifetime overlaps: 5, num same alloc cpu: 5, num same dealloc_cpu: 2
+Memory allocation stack id = 5
+	alloc_count 6, size (ave/min/max) 73728.00 / 73728 / 73728
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 10745.66 / 3115 / 18279
+	num migrated: 1, num lifetime overlaps: 5, num same alloc cpu: 5, num same dealloc_cpu: 2
+Memory allocation stack id = 6
+	alloc_count 6, size (ave/min/max) 66.00 / 66 / 66
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 10634.66 / 3004 / 18168
+	num migrated: 1, num lifetime overlaps: 5, num same alloc cpu: 5, num same dealloc_cpu: 2
+Memory allocation stack id = 7
+	alloc_count 6, size (ave/min/max) 1024.00 / 1024 / 1024
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 10634.66 / 3004 / 18168
+	num migrated: 1, num lifetime overlaps: 5, num same alloc cpu: 5, num same dealloc_cpu: 2
+Stack for id 5:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x7fbc208ac8dd  (/lib/x86_64-linux-gnu/libstdc++.so.6+0xac8dd) (BuildId: 5ee505b0fcd19442c7c50f54b8271a6670ea8274)
+
+Stack for id 2:
+    #0 0x56145c5e5c61 in pthread_create /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_interceptors.cpp:137:3
+    #1 0x56145c5eb397 in __memprof::MemprofInitInternal() (.part.0) /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_rtl.cpp:261:17
+
+Stack for id 4:
+    #0 0x56145c5e8d87 in calloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:65:3
+
+Stack for id 6:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x56145c6184bd in main /usr/local/google/home/vny/Documents/llvm-project/hello.cc:19:21
+    #2 0x7fbc206456c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+
+Stack for id 1:
+    #0 0x56145c5e8d87 in calloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:65:3
+    #1 0x7fbc20c07f02 in calloc elf/../include/rtld-malloc.h:44:10
+    #2 0x7fbc20c07f02 in allocate_dtv elf/../elf/dl-tls.c:375:9
+
+Stack for id 3:
+    #0 0x56145c5e7660 in realloc.part.0 /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:73:3
+
+Stack for id 7:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x7fbc2069141b in _IO_file_doallocate libio/filedoalloc.c:101:7
+
+Recorded MIBs (incl. live on exit):
+Memory allocation stack id = 1
+	alloc_count 7, size (ave/min/max) 304.00 / 304 / 304
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 12250.42 / 3115 / 21279
+	num migrated: 1, num lifetime overlaps: 6, num same alloc cpu: 6, num same dealloc_cpu: 2
+Memory allocation stack id = 5
+	alloc_count 7, size (ave/min/max) 73728.00 / 73728 / 73728
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 12250.42 / 3115 / 21279
+	num migrated: 1, num lifetime overlaps: 6, num same alloc cpu: 6, num same dealloc_cpu: 2
+Memory allocation stack id = 6
+	alloc_count 7, size (ave/min/max) 66.00 / 66 / 66
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 12139.42 / 3004 / 21168
+	num migrated: 1, num lifetime overlaps: 6, num same alloc cpu: 6, num same dealloc_cpu: 2
+Memory allocation stack id = 7
+	alloc_count 7, size (ave/min/max) 1024.00 / 1024 / 1024
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 12139.42 / 3004 / 21168
+	num migrated: 1, num lifetime overlaps: 6, num same alloc cpu: 6, num same dealloc_cpu: 2
+Stack for id 5:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x7fbc208ac8dd  (/lib/x86_64-linux-gnu/libstdc++.so.6+0xac8dd) (BuildId: 5ee505b0fcd19442c7c50f54b8271a6670ea8274)
+
+Stack for id 2:
+    #0 0x56145c5e5c61 in pthread_create /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_interceptors.cpp:137:3
+    #1 0x56145c5eb397 in __memprof::MemprofInitInternal() (.part.0) /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_rtl.cpp:261:17
+
+Stack for id 4:
+    #0 0x56145c5e8d87 in calloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:65:3
+
+Stack for id 6:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x56145c6184bd in main /usr/local/google/home/vny/Documents/llvm-project/hello.cc:19:21
+    #2 0x7fbc206456c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+
+Stack for id 1:
+    #0 0x56145c5e8d87 in calloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:65:3
+    #1 0x7fbc20c07f02 in calloc elf/../include/rtld-malloc.h:44:10
+    #2 0x7fbc20c07f02 in allocate_dtv elf/../elf/dl-tls.c:375:9
+
+Stack for id 3:
+    #0 0x56145c5e7660 in realloc.part.0 /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:73:3
+
+Stack for id 7:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x7fbc2069141b in _IO_file_doallocate libio/filedoalloc.c:101:7
+
+Recorded MIBs (incl. live on exit):
+Memory allocation stack id = 1
+	alloc_count 8, size (ave/min/max) 304.00 / 304 / 304
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 13754.50 / 3115 / 24283
+	num migrated: 1, num lifetime overlaps: 7, num same alloc cpu: 7, num same dealloc_cpu: 3
+Memory allocation stack id = 5
+	alloc_count 8, size (ave/min/max) 73728.00 / 73728 / 73728
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 13754.50 / 3115 / 24283
+	num migrated: 1, num lifetime overlaps: 7, num same alloc cpu: 7, num same dealloc_cpu: 3
+Memory allocation stack id = 6
+	alloc_count 8, size (ave/min/max) 66.00 / 66 / 66
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 13643.50 / 3004 / 24172
+	num migrated: 1, num lifetime overlaps: 7, num same alloc cpu: 7, num same dealloc_cpu: 3
+Memory allocation stack id = 7
+	alloc_count 8, size (ave/min/max) 1024.00 / 1024 / 1024
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 13643.50 / 3004 / 24172
+	num migrated: 1, num lifetime overlaps: 7, num same alloc cpu: 7, num same dealloc_cpu: 3
+Stack for id 5:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x7fbc208ac8dd  (/lib/x86_64-linux-gnu/libstdc++.so.6+0xac8dd) (BuildId: 5ee505b0fcd19442c7c50f54b8271a6670ea8274)
+
+Stack for id 2:
+    #0 0x56145c5e5c61 in pthread_create /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_interceptors.cpp:137:3
+    #1 0x56145c5eb397 in __memprof::MemprofInitInternal() (.part.0) /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_rtl.cpp:261:17
+
+Stack for id 4:
+    #0 0x56145c5e8d87 in calloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:65:3
+
+Stack for id 6:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x56145c6184bd in main /usr/local/google/home/vny/Documents/llvm-project/hello.cc:19:21
+    #2 0x7fbc206456c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+
+Stack for id 1:
+    #0 0x56145c5e8d87 in calloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:65:3
+    #1 0x7fbc20c07f02 in calloc elf/../include/rtld-malloc.h:44:10
+    #2 0x7fbc20c07f02 in allocate_dtv elf/../elf/dl-tls.c:375:9
+
+Stack for id 3:
+    #0 0x56145c5e7660 in realloc.part.0 /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:73:3
+
+Stack for id 7:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x7fbc2069141b in _IO_file_doallocate libio/filedoalloc.c:101:7
+
+Recorded MIBs (incl. live on exit):
+Memory allocation stack id = 1
+	alloc_count 9, size (ave/min/max) 304.00 / 304 / 304
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 15258.11 / 3115 / 27287
+	num migrated: 1, num lifetime overlaps: 8, num same alloc cpu: 8, num same dealloc_cpu: 3
+Memory allocation stack id = 5
+	alloc_count 9, size (ave/min/max) 73728.00 / 73728 / 73728
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 15258.11 / 3115 / 27287
+	num migrated: 1, num lifetime overlaps: 8, num same alloc cpu: 8, num same dealloc_cpu: 3
+Memory allocation stack id = 6
+	alloc_count 9, size (ave/min/max) 66.00 / 66 / 66
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 15147.11 / 3004 / 27176
+	num migrated: 1, num lifetime overlaps: 8, num same alloc cpu: 8, num same dealloc_cpu: 3
+Memory allocation stack id = 7
+	alloc_count 9, size (ave/min/max) 1024.00 / 1024 / 1024
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 15147.11 / 3004 / 27176
+	num migrated: 1, num lifetime overlaps: 8, num same alloc cpu: 8, num same dealloc_cpu: 3
+Stack for id 5:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x7fbc208ac8dd  (/lib/x86_64-linux-gnu/libstdc++.so.6+0xac8dd) (BuildId: 5ee505b0fcd19442c7c50f54b8271a6670ea8274)
+
+Stack for id 2:
+    #0 0x56145c5e5c61 in pthread_create /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_interceptors.cpp:137:3
+    #1 0x56145c5eb397 in __memprof::MemprofInitInternal() (.part.0) /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_rtl.cpp:261:17
+
+Stack for id 4:
+    #0 0x56145c5e8d87 in calloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:65:3
+
+Stack for id 6:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x56145c6184bd in main /usr/local/google/home/vny/Documents/llvm-project/hello.cc:19:21
+    #2 0x7fbc206456c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+
+Stack for id 1:
+    #0 0x56145c5e8d87 in calloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:65:3
+    #1 0x7fbc20c07f02 in calloc elf/../include/rtld-malloc.h:44:10
+    #2 0x7fbc20c07f02 in allocate_dtv elf/../elf/dl-tls.c:375:9
+
+Stack for id 3:
+    #0 0x56145c5e7660 in realloc.part.0 /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:73:3
+
+Stack for id 7:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x7fbc2069141b in _IO_file_doallocate libio/filedoalloc.c:101:7
+
+Recorded MIBs (incl. live on exit):
+Memory allocation stack id = 1
+	alloc_count 10, size (ave/min/max) 304.00 / 304 / 304
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 16743.40 / 3115 / 30111
+	num migrated: 1, num lifetime overlaps: 9, num same alloc cpu: 9, num same dealloc_cpu: 3
+Memory allocation stack id = 5
+	alloc_count 10, size (ave/min/max) 73728.00 / 73728 / 73728
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 16743.40 / 3115 / 30111
+	num migrated: 1, num lifetime overlaps: 9, num same alloc cpu: 9, num same dealloc_cpu: 3
+Memory allocation stack id = 6
+	alloc_count 10, size (ave/min/max) 66.00 / 66 / 66
+	access_count (ave/min/max): 0.90 / 0 / 9
+	lifetime (ave/min/max): 16632.40 / 3004 / 30000
+	num migrated: 1, num lifetime overlaps: 9, num same alloc cpu: 9, num same dealloc_cpu: 3
+Memory allocation stack id = 7
+	alloc_count 10, size (ave/min/max) 1024.00 / 1024 / 1024
+	access_count (ave/min/max): 0.00 / 0 / 0
+	lifetime (ave/min/max): 16632.40 / 3004 / 30000
+	num migrated: 1, num lifetime overlaps: 9, num same alloc cpu: 9, num same dealloc_cpu: 3
+Memory allocation stack id = 8
+	alloc_count 1, size (ave/min/max) 24.00 / 24 / 24
+	access_count (ave/min/max): 3.00 / 3 / 3
+	lifetime (ave/min/max): 0.00 / 0 / 0
+	num migrated: 0, num lifetime overlaps: 0, num same alloc cpu: 0, num same dealloc_cpu: 0
+Stack for id 5:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x7fbc208ac8dd  (/lib/x86_64-linux-gnu/libstdc++.so.6+0xac8dd) (BuildId: 5ee505b0fcd19442c7c50f54b8271a6670ea8274)
+
+Stack for id 2:
+    #0 0x56145c5e5c61 in pthread_create /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_interceptors.cpp:137:3
+    #1 0x56145c5eb397 in __memprof::MemprofInitInternal() (.part.0) /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_rtl.cpp:261:17
+
+Stack for id 8:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x56145c618562 in main /usr/local/google/home/vny/Documents/llvm-project/hello.cc:25:15
+    #2 0x7fbc206456c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+
+Stack for id 4:
+    #0 0x56145c5e8d87 in calloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:65:3
+
+Stack for id 6:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x56145c6184bd in main /usr/local/google/home/vny/Documents/llvm-project/hello.cc:19:21
+    #2 0x7fbc206456c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+
+Stack for id 1:
+    #0 0x56145c5e8d87 in calloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:65:3
+    #1 0x7fbc20c07f02 in calloc elf/../include/rtld-malloc.h:44:10
+    #2 0x7fbc20c07f02 in allocate_dtv elf/../elf/dl-tls.c:375:9
+
+Stack for id 3:
+    #0 0x56145c5e7660 in realloc.part.0 /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:73:3
+
+Stack for id 7:
+    #0 0x56145c5e8a9f in malloc /usr/local/google/home/vny/Documents/llvm-project/compiler-rt/lib/memprof/memprof_malloc_linux.cpp:57:3
+    #1 0x7fbc2069141b in _IO_file_doallocate libio/filedoalloc.c:101:7
+
